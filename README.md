@@ -2,10 +2,33 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Not Done
+__Frontend__
+
+[ ] Update Product 
+[ ] Add Product
+
+## ENV Variables
+__API__ `/api`
+
+`MONGO_URL`: Mongodb connection string
+`SECRET`: Secret key used by  jsowwebtoken
+
+__Frontend__ `/`
+
+`REACT_APP_API_URL` : URL of the api server
+
+
+
 ## Available Scripts
-
 In the project directory, you can run:
+__API__
+### `npm start`
+Start the api server at [http://localhost:8080](http://localhost:8080) 
 
+
+
+__FrontEnd__
 ### `npm start`
 
 Runs the app in the development mode.\

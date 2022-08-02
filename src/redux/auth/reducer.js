@@ -22,6 +22,8 @@ const reducer = (state=initialState,{type,payload}) => {
         return { ...state, isLoading: false ,isAuth:true,token:payload.token,user:payload.user};
       case authActions.LOGIN_FAILURE:
         return { ...state, isLoading: false, error: payload };
+      case authActions.LOGOUT:
+        return{...state,isAuth:false,token:null,user:{}}
       default:
         return state;
     }

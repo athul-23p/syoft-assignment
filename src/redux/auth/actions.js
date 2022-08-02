@@ -1,7 +1,7 @@
 import axios from 'axios';
 const instance = axios.create({
-    baseURL:'http://localhost:8080/auth'
-})
+  baseURL: `${process.env.REACT_APP_API_URL}/auth`,
+});
 
 export const authActions = {
   REGISTRATION_REQUEST: "REGISTRATION_REQUEST",
@@ -10,6 +10,7 @@ export const authActions = {
   LOGIN_REQUEST: "LOGIN_REQUEST",
   LOGIN_SUCCESS: "LOGIN_SUCCESS",
   LOGIN_FAILURE: "LOGIN_FAILURE",
+  LOGOUT:'LOGOUT'
 };
 
 
@@ -18,7 +19,7 @@ const registrationRequest = (payload) => ({type:authActions.REGISTRATION_REQUEST
 const registrationSuccesss = (payload) => ({type:authActions.REGISTRATION_SUCCESS,payload});
 const registrationFailure = (payload) => ({type:authActions.REGISTRATION_FAILURE,payload});
 
-
+export const logout = () => ({type:authActions.LOGOUT});
 export const register = (user) => async (dispatch) => {
     dispatch(registrationRequest());
     try {

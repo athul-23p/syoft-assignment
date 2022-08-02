@@ -2,9 +2,11 @@ import { legacy_createStore as createStore,applyMiddleware,compose,combineReduce
 import thunk from 'redux-thunk';
 
 import authReducer from './auth/reducer';
+import productReducer from './products/reducer';
 
 const rootReducer = combineReducers({
     auth: authReducer,
+    products:productReducer,
 })
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
