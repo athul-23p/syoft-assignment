@@ -1,0 +1,12 @@
+
+.register-form{
+    display : flex;
+    flex-direction: column;
+    width:400px;
+    margin: auto;
+}
+
+.register-form > input,select{
+    padding:5px;
+    margin:10px;
+}
