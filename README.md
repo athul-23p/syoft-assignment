@@ -6,13 +6,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 __Frontend__
 
 [ ] Update Product 
+
 [ ] Add Product
 
 ## ENV Variables
 __API__ `/api`
 
 `MONGO_URL`: Mongodb connection string
-`SECRET`: Secret key used by  jsowwebtoken
+
+
+`SECRET`: Secret key used by  jsonwebtoken package
 
 __Frontend__ `/`
 
